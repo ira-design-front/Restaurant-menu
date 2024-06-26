@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cibo restaurant</title>
+        <style>
+            body {
+                width: 85%;
+                margin: auto;
+                background-color: rgb(239, 241, 235);
+            }
+
+
+            li {
+                display: inline;
+                text-align: center;
+                font-weight: 600;
+                padding: 8px;
+                border-style: solid;
+                border-radius: 8px;
+                background-color: rgb(224, 228, 217);
+                color: rgb(36, 56, 5);
+                border-color: rgb(75, 109, 24);
+            }
+
+
+
+            hr {
+                width: 95;
+                margin: auto;
+            }
+
+
+            .choices {
+                padding: 24px;
+                padding-top: 8px;
+                border-style: none;
+                border-radius: 8px;
+                background-color: rgb(224, 228, 217);
+                width: 36%;
+            }
+
+
+            #go-to-checkout {
+                font-weight: 600;
+                font-size: 1 em;
+                padding: 8px;
+                border-radius: 8px;
+                background-color: rgb(75, 109, 24);
+                color: rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://i.imgur.com/XWPOcpr.jpeg" alt="restaurant surrounded by trees" id="header-img">
+            <h1>Cibo | Italian restaurant</h1>
+            <nav>
+                <ul>
+                    <li id="menu">📋 Menu</li>
+                    <li id="order-form">🛒 Order form</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Menu</h2>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1619450239118-3a0385b360c2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sliced bread on white ceramic plate" width="100%">
+                    <h3>Housemade Focaccia</h3>
+                    <p>Soft focaccia with a crisp crust, drizzled with olive oil and herbs<br><i><b>$8.00</b></i></p>
+                </article><br><hr><br><br>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1632778140142-d62dee6e124c?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a plate of food on a table next to a glass of orange juice" width="100%">
+                    <h3>Arancini</h3>
+                    <p>Fried rice balls filled with mozzarella and meat ragù, served with marinara sauce<br><i><b>$16.00</b></i></p>
+                </article><br><hr><br><br>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1564936281291-294551497d81?q=80&w=1052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cooked food on round white ceramic plate" width="100%">
+                    <h3>Pizza Margherita</h3>
+                    <p>Wood-fired pizza with tomato sauce, mozzarella, and fresh basil<br><i><b>$18.00</b></i></p>
+                </article><br><hr><br><br>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pasta dish on white ceramic plate" width="100%">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Spaghetti in a creamy sauce with Pecorino Romano, pancetta, and black pepper<br><i><b>$27.00</b></i></p>
+                </article><br><hr><br>
+            </section>
+            <section>
+                <h2>Place Your Order</h2>
+                <form>
+                    <div class="choices">
+                    <h3>Select your choices</h3>
+                    <label for="housemade-focaccia">Housemade Focaccia</label>
+                    <input type="number" min="0" id="housemade-focaccia"/><br><br>
+                    <label for="arancini">Arancini</label>
+                    <input type="number" min="0" id="arancini"/><br><br>
+                    <label for="pizza-margherita">Pizza Margherita</label>
+                    <input type="number" min="0" id="pizza-margherita"/><br><br>
+                    <label for="spaghetti-carbonara">Spaghetti Carbonara</label>
+                    <input type="number" min="0" id="spaghetti-carbonara"/>
+                    </div>
+                    <h3>Sides</h3>
+                    <input type="checkbox" id="mixed-olives"/>
+                    <label for="mixed-olives">Mixed Olives $1</label><br>
+                    <input type="checkbox" id="garlic-bread"/>
+                    <label for="garlic-bread">Garlic Bread $1.5</label><br>
+                    <input type="checkbox" id="truffle-fries"/>
+                    <label for="truffle-fries">Truffle Fries $2</label><br>
+                    <input type="checkbox" id="grilled-vegetables"/>
+                    <label for="grilled-vegetables">Grilled Vegetables $3</label>
+                    <br>
+                    <h3>Special Requests</h3>
+                    <p>Please let us know about any allergies or special requests</p>
+                    <textarea cols="44" placeholder="Write your requests here" maxlength="100"></textarea><br><br>
+                    <input type="submit" value="Go To Checkout" id="go-to-checkout"/>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by <a href="https://www.codedex.io/@Ele349283">Ele349283</a> ❤️ </p>
+        </footer>
+    </body>
+</html>
